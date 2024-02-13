@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="md:w-[1140px] mx-auto mt-5 w-full">
+
+<body class="md:w-[1140px] mx-auto mt-5 w-full p-2">
     <nav class="bg-gray-400 rounded-sm">
         <div class="navbar">
             <div class="navbar-start">
@@ -42,12 +44,17 @@
                         <h2 class="card-title">Triangle</h2>
                         <p>Area (A) = 0.5 b h</p>
                         <div>
-                            <input type="text" placeholder="base" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
-                            <input type="text" placeholder="height" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                            <input type="text" id="base-input" placeholder="base" class="w-20 p-3"> <span
+                                class="ml-2 mr-2">cm</span>
+                            <input type="text" id="height-input" placeholder="height" class="w-20 p-3"> <span
+                                class="ml-2 mr-2">cm</span>
                         </div>
-                        <p id="display" class="mt-2 mb-2 text-center"></p>
+                        <div>
+                            <p>Area: <span id="display1"></span> cm<sup>2</sup></p>
+                        </div>
                         <div class="card-actions w-full">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button class="btn btn-primary w-full"
+                                onclick=" outputTriangleDisplayFunction()">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -58,12 +65,17 @@
                         <h2 class="card-title">Rectangle</h2>
                         <p>Area (A) = w I</p>
                         <div>
-                            <input type="text" placeholder="width" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
-                            <input type="text" placeholder="length" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                            <input type="text" placeholder="width" class="w-20 p-3" id="input-width"> <span
+                                class="ml-2 mr-2">cm</span>
+                            <input type="text" placeholder="length" class="w-20 p-3" id="input-length"> <span
+                                class="ml-2 mr-2">cm</span>
                         </div>
-                        <p id="display" class="mt-2 mb-2 text-center"></p>
+                        <div>
+                            <p>Area: <span id="display2"></span> cm<sup>2</sup></p>
+                        </div>
                         <div class="card-actions w-full">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button class="btn btn-primary w-full"
+                                onclick="outputRectangleDisplayFunction()">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -76,12 +88,14 @@
                         <h2 class="card-title">Parallelogram</h2>
                         <p> Area (A) = b h</p>
                         <div>
-                            <input type="text" placeholder="base" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
-                            <input type="text" placeholder="height" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                            <input type="text" placeholder="base" class="w-20 p-3" id="para-base"> <span class="ml-2 mr-2">cm</span>
+                            <input type="text" placeholder="height" class="w-20 p-3" id="para-height"> <span class="ml-2 mr-2">cm</span>
                         </div>
-                        <p id="display" class="mt-2 mb-2 text-center"></p>
+                        <div>
+                            <p>Area: <span id="display3"></span> cm<sup>2</sup></p>
+                        </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button class="btn btn-primary w-full"  onclick="outputParallelogramDisplayFunction ()">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -93,10 +107,14 @@
                         <h2 class="card-title">Rhombus</h2>
                         <p>Area (A) = d1 d 0.5 2</p>
                         <div>
-                            <input type="text" placeholder="base" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
-                            <input type="text" placeholder="height" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                            <input type="text" placeholder="base" class="w-20 p-3"> <span
+                                class="ml-2 mr-2">cm</span>
+                            <input type="text" placeholder="height" class="w-20 p-3"> <span
+                                class="ml-2 mr-2">cm</span>
                         </div>
-                        <p id="display" class="mt-2 mb-2 text-center"></p>
+                        <div>
+                            <p>Area: <span id=""></span> cm<sup>2</sup></p>
+                        </div>
                         <div class="card-actions">
                             <button class="btn btn-primary w-full">Calculate</button>
                         </div>
