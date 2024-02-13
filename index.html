@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +8,137 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
+<body class="md:w-[1140px] mx-auto mt-5 w-full">
+    <nav class="bg-gray-400 rounded-sm">
+        <div class="navbar">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <a class="btn btn-ghost text-xl">Interactive</a> <br>
+                    <a class="btn btn-ghost text-xl">Geometry Genius
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <a class="btn">Blog</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="mt-2">
+            <div class="grid md:grid-cols-3 gap-5 sm:grid-cols-1">
+                <!-- card 1 -->
+                <div class="card rounded-sm border p-5">
+                    <figure><img src="images/triangle.png" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area (A) = 0.5 b h</p>
+                        <div>
+                            <input type="text" placeholder="base" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                            <input type="text" placeholder="height" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                        </div>
+                        <p id="display" class="mt-2 mb-2 text-center"></p>
+                        <div class="card-actions w-full">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card rounded-sm border p-5">
+                    <figure><img src="images/rectangle.png" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area (A) = w I</p>
+                        <div>
+                            <input type="text" placeholder="width" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                            <input type="text" placeholder="length" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                        </div>
+                        <p id="display" class="mt-2 mb-2 text-center"></p>
+                        <div class="card-actions w-full">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- card 3 -->
+                <div class="card rounded-sm border p-5">
+                    <figure><img src="images/parallelogram.png" /></figure>
+                    <div class="card-body">
 
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p> Area (A) = b h</p>
+                        <div>
+                            <input type="text" placeholder="base" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                            <input type="text" placeholder="height" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                        </div>
+                        <p id="display" class="mt-2 mb-2 text-center"></p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card4 -->
+                <div class="card rounded-sm border p-5">
+                    <figure><img src="images/rhombus.png" /></figure>
+                    <div class="card-body">
+
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = d1 d 0.5 2</p>
+                        <div>
+                            <input type="text" placeholder="base" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                            <input type="text" placeholder="height" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                        </div>
+                        <p id="display" class="mt-2 mb-2 text-center"></p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 5-->
+                <div class="card rounded-sm border p-5">
+                    <figure><img src="images/pentagon.png" /></figure>
+                    <div class="card-body">
+
+                        <h2 class="card-title">Pentagon </h2>
+                        <p>Area (A) = 0.5 p b</p>
+                        <div>
+                            <input type="text" placeholder="base" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                            <input type="text" placeholder="height" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                        </div>
+                        <p id="display" class="mt-2 mb-2 text-center"></p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 6-->
+                <div class="card rounded-sm border p-5">
+                    <figure><img src="images/ellipse.png" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area (A) = ab</p>
+                        <div>
+                            <input type="text" placeholder="base" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                            <input type="text" placeholder="height" class="w-20 p-3"> <span class="ml-2 mr-2">cm</span>
+                        </div>
+                        <p id="display" class="mt-2 mb-2 text-center"></p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="index.js"></script>
 </body>
+
 </html>
